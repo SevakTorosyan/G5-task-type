@@ -22,7 +22,7 @@ function findLuckyNumbers(): int
         $counter = 0;
         for ($i = $digitsModel->getFirst(); $i <= $digitsModel->getEnd(); $i++) {
             if ((new TicketService(new TicketModel($i)))->isLuckyTicket()) {
-                if ($_GET['show']) echo "{$i} \n";
+                if (isset($_GET['show'])) echo "{$i} \n";
                 $counter++;
             }
         }

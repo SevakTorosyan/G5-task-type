@@ -1,0 +1,15 @@
+{
+    "name": "sevak/g5",
+    "authors": [
+        {
+            "name": "Sevak",
+            "email": "sevak754@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-4": {"src\\": "src/"}
+    }
+}
